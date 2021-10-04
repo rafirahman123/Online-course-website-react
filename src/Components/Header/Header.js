@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import img from '../img/reactjs-icon.svg';
 import './Header.css'
 
 const Header = () => {
@@ -9,7 +10,14 @@ const Header = () => {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand to="/home">Learn with Rafi</Navbar.Brand>
+          <Navbar.Brand to="/home">  <img
+            alt=""
+            src={img}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{' '}
+            Rafi's Dream Skill</Navbar.Brand>
           <Nav className="mx-auto p-3">
             <NavLink to="/home" className="mx-2">
               <Button variant="outline-info">Home</Button>
