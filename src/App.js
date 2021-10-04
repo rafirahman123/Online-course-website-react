@@ -4,23 +4,32 @@ import { BrowserRouter as Router ,Switch,Route} from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
-import Service from './Components/Services/Service';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
 import Error from './Components/Error/Error';
+import HomeService from './Components/HomeService/HomeService';
+import Services from './Components/Services/Services';
+import Courses from './Components/Courses/Courses';
+import HomeUi from './Components/HomeUi/HomeUi';
+
 
 function App() {
   return (
+    
     <Router>
       <Header></Header>
+    
+     
       <Switch>
 
         <Route path="/home">
-        <Home></Home>
+          <HomeUi></HomeUi>
+            <HomeService></HomeService>  
         </Route>
 
         <Route path="/service">
-        <Service></Service>
+          {/* <Services></Services>  */}
+            <Courses></Courses>
         </Route>
 
         <Route path="/blog">
@@ -43,6 +52,7 @@ function App() {
 
       <Footer></Footer>
     </Router>
+    
   );
 }
 
