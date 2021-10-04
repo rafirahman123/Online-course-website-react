@@ -11,6 +11,9 @@ import HomeService from './Components/HomeService/HomeService';
 import Services from './Components/Services/Services';
 import Courses from './Components/Courses/Courses';
 import HomeUi from './Components/HomeUi/HomeUi';
+import BlogUi from './Components/BlogUI/BlogUi';
+import Blogs from './Components/Blogs/Blogs';
+import ServiceUi from './Components/ServiceUi/ServiceUi';
 
 
 function App() {
@@ -28,12 +31,14 @@ function App() {
         </Route>
 
         <Route path="/service">
-          {/* <Services></Services>  */}
-            <Courses></Courses>
+          <ServiceUi></ServiceUi>
+          <Courses></Courses>
+          
         </Route>
 
         <Route path="/blog">
-        <Blog></Blog>
+          <BlogUi></BlogUi>
+          <Blog></Blog>
         </Route>
 
         <Route path="/about">
@@ -41,7 +46,8 @@ function App() {
         </Route>
 
           <Route exact path="/">
-              <Home></Home>
+             <HomeUi></HomeUi>
+            <HomeService></HomeService> 
           </Route>
 
           <Route path="*">

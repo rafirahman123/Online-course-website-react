@@ -6,7 +6,7 @@ const Home = (props) => {
   const {course,url,author,price}= props.data 
   return (
     <div >
-      <div className="card ">
+      <div className="card">
         <div className="image">
           <img src={url} alt="" />
         </div>
