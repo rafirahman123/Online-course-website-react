@@ -1,27 +1,35 @@
 import React from 'react';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
-   const activeStyle = {
-            fontWeight: "400",
-            color: "#5292EF",
-          }
   return (
     // creating navlink 
-    <nav className='container'>
-      <div className='nav-items'>
-        <NavLink to="/home" activeStyle={activeStyle} >Home</NavLink>
-       <NavLink to="/service" activeStyle={activeStyle} >Services</NavLink>
-       <NavLink to="/blog" activeStyle={activeStyle}>Blogs</NavLink>
-       <NavLink to="/about" activeStyle={activeStyle}>About Us</NavLink>
-      </div>
-      <div className="border">
-        
+    <div>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand to="/home">Learn with Rafi</Navbar.Brand>
+          <Nav className="mx-auto p-3">
+            <NavLink to="/home" className="mx-2">
+              <Button variant="outline-info">Home</Button>
+            </NavLink>
+            <NavLink to="/about" className="mx-2">
+              <Button variant="outline-info">About</Button>
+            </NavLink>
+            <NavLink to="/blog" className="mx-2">
+              <Button variant="outline-info">Blogs</Button>
+            </NavLink>
+            <NavLink to="/service" className="mx-2">
+              <Button variant="outline-info">Courses</Button>
+            </NavLink>
+          </Nav>
+        </Container>
+      </Navbar>
     </div>
-    </nav>
-  
-    
+
+
+
   );
 };
 

@@ -9,9 +9,9 @@ const About = () => {
           <img src={img} className="img-fluid w-75" alt="" />
         </div>
         <div className="col-lg-6 ">
-          <h2 className="">Why Choose Learn With Joy ?</h2>
+          <h2 className="">Why Learn With Rafi ?</h2>
           <p>There are many variations of passages of course available, but the majority have suffered alteration in some form. There are many variations of passages of Best Course available.</p>
-          <button className="btn btn-success">More Details</button>
+          <button className="btn btn-info">More Details</button>
         </div>
       </div>
     </div>
