@@ -14,7 +14,7 @@ const Courses = () => {
   return (
     // sending data to services
     <div>
-      <div>
+      <div className="row">
         {
           service.map(element => <Services data={element} key={element.id} ></Services>)
         }

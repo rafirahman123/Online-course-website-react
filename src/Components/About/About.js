@@ -1,12 +1,13 @@
 import React from 'react';
-import img from '../img/05.png'
+import './About.css';
+import img from '../img/08.png';
 const About = () => {
   return (
     //creating about part
     <div className="container">
       <div className="row about d-flex justify-content-center align-items-center">
         <div className="col-lg-6">
-          <img src={img} className="img-fluid w-75" alt="" />
+          <img src={img} className="about-image" alt="" />
         </div>
         <div className="col-lg-6 ">
           <h2 className="">Why Learn With Rafi ?</h2>
