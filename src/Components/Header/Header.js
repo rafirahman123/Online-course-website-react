@@ -8,7 +8,7 @@ const Header = () => {
             color: "#5292EF",
           }
   return (
-    
+    // creating navlink 
     <nav className='container'>
       <div className='nav-items'>
         <NavLink to="/home" activeStyle={activeStyle} >Home</NavLink>

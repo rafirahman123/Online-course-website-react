@@ -3,6 +3,7 @@ import Services from '../Services/Services';
 import './Courses.css'
 
 const Courses = () => {
+  // fetching all course data
     const [service,setServices] = useState([])
   useEffect((() => {
     fetch('./course.json')
@@ -11,11 +12,11 @@ const Courses = () => {
   }),[])
 
   return (
-    
+    // sending data to services
     <div className="container">
       <div className="courses">
       {
-         service.map(element=><Services data={element}  ></Services>)
+         service.map(element=><Services data={element} key={element.id} ></Services>)
        }
       </div>
     

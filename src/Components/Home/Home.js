@@ -2,9 +2,10 @@ import './Home.css'
 
 
 const Home = (props) => {
-  console.log(props.data); 
+  // getting data from Homeservice
   const {course,url,author,price}= props.data 
   return (
+    // showing card
     <div >
       <div className="card">
         <div className="image">

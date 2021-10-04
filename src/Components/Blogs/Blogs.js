@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Blogs = (props) => {
-  console.log(props.data);
+  // blogs second part
   const {types,id,title,url,date} = props.data
   return (
+    // showing card
   <div class="col-lg-4 my-2">
       <div class="card-group">
   <div class="card">

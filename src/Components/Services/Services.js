@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Services = (props) => {
-  // console.log(props?.data?.course); 
+  //getting data from props
   const {course,author,url,price}=props?.data||{}
-
   return (
+    //service second part
        <div >
       <div className="card course-card">
         <div className="image-course">

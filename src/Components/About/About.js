@@ -2,6 +2,7 @@ import React from 'react';
 import img from '../img/05.png'
 const About = () => {
   return (
+    //creating about part
     <div className="container">
       <div className="row about d-flex justify-content-center align-items-center">
         <div className="col-lg-6">
